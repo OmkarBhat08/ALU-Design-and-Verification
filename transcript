@@ -1,5 +1,5 @@
 # vsim -coverage alu_tb -c -do "coverage save -onexit -directive -codeAll alu_tb.ucdb; run -all; exit" 
-# Start time: 00:00:08 on Jun 07,2025
+# Start time: 00:15:48 on Jun 07,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -420,13 +420,13 @@
 # Monitor response: At time (23945), RES = 0000000111111111, COUT = 1, GLE = 000, OFLOW = 1, ERR = 0, NEG = 0, ZERO = 0
 # expected result = 000000011111111110001000 ,response data = 000000011111111110001000
 # -----------------------------------------------------------------------------------------
-# stimulus_mem data = 11001001110111111111011000010100000000000000010100001000 
+# stimulus_mem data = 11001001100111101100100011001000000000000000000000000000 
 # 
-# packet data = 11001001110111111111011000010100000000000000010100001000 
+# packet data = 11001001100111101100100011001000000000000000000000000000 
 # 
-# At time (24060), Feature_ID = 50, Reserved_bit = 00, OPA = 11111011, OPB = 00001010, CMD = 1011, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000000000101, cout = 0, Comparison_GLE = 010, ov = 0, err = 0, neg = 0, zero = 0
-# Monitor response: At time (24425), RES = 0000000000000101, COUT = 0, GLE = 010, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
-# expected result = 000000000000010100100000 ,response data = 000000000000010100100000
+# At time (24060), Feature_ID = 50, Reserved_bit = 00, OPA = 01100100, OPB = 01100100, CMD = 0011, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (24425), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000000000000000000 ,response data = 000000000000000000000000
 # -----------------------------------------------------------------------------------------
 # stimulus_mem data = 11001101110011111111110111111100111111100000000100000000 
 # 
@@ -444,32 +444,32 @@
 # Monitor response: At time (25385), RES = 0000000111111111, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
 # expected result = 000000011111111100000000 ,response data = 000000011111111100000000
 # -----------------------------------------------------------------------------------------
-# stimulus_mem data = 11010011010011100000010010101000000000000000000000000000 
+# stimulus_mem data = 11010111010011100000010010101000000000000000000000000000 
 # 
-# packet data = 11010011010011100000010010101000000000000000000000000000 
+# packet data = 11010111010011100000010010101000000000000000000000000000 
 # 
-# At time (25500), Feature_ID = 52, Reserved_bit = 00, OPA = 00000010, OPB = 01010100, CMD = 1001, CIN = 0, CE = 1,INP_VALID = 11, MODE = 0, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# At time (25500), Feature_ID = 53, Reserved_bit = 00, OPA = 00000010, OPB = 01010100, CMD = 1001, CIN = 0, CE = 1,INP_VALID = 11, MODE = 0, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
 # Monitor response: At time (25865), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
 # expected result = 000000000000000000000000 ,response data = 000000000000000000000000
 # -----------------------------------------------------------------------------------------
-# stimulus_mem data = 1101100110011xx00000000000000001000000000000000001000000 
+# stimulus_mem data = 1101100110011xx00000000000000001000000000000000000000000 
 # 
-# packet data = 1101100110011xx00000000000000001000000000000000001000000 
+# packet data = 1101100110011xx00000000000000001000000000000000000000000 
 # 
-# At time (25980), Feature_ID = 54, Reserved_bit = 00, OPA = 00000000, OPB = 00000000, CMD = 0011, CIN = 1, CE = 1,INP_VALID = xx, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 1, err = 0, neg = 0, zero = 0
+# At time (25980), Feature_ID = 54, Reserved_bit = 00, OPA = 00000000, OPB = 00000000, CMD = 0011, CIN = 1, CE = 1,INP_VALID = xx, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
 # Monitor response: At time (26345), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
-# expected result = 000000000000000000001000 ,response data = 000000000000000000000000
+# expected result = 000000000000000000000000 ,response data = 000000000000000000000000
 # -----------------------------------------------------------------------------------------
-# stimulus_mem data = 11011001100111100000000000000000000000000000000001000000 
+# stimulus_mem data = 11011101100111100000000000000000000000000000000000000000 
 # 
-# packet data = 11011001100111100000000000000000000000000000000001000000 
+# packet data = 11011101100111100000000000000000000000000000000000000000 
 # 
-# At time (26460), Feature_ID = 54, Reserved_bit = 00, OPA = 00000000, OPB = 00000000, CMD = 0011, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 1, err = 0, neg = 0, zero = 0
+# At time (26460), Feature_ID = 55, Reserved_bit = 00, OPA = 00000000, OPB = 00000000, CMD = 0011, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
 # Monitor response: At time (26825), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
-# expected result = 000000000000000000001000 ,response data = 000000000000000000000000
+# expected result = 000000000000000000000000 ,response data = 000000000000000000000000
 # -----------------------------------------------------------------------------------------
 # ** Note: $finish    : alu_tb.v(216)
 #    Time: 27130 ns  Iteration: 0  Instance: /alu_tb
 # Saving coverage database on exit...
-# End time: 00:00:09 on Jun 07,2025, Elapsed time: 0:00:01
+# End time: 00:15:49 on Jun 07,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

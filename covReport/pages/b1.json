@@ -1,13 +1,13 @@
 var g_data = {
 b436:[{dummy:0},
-{anchor:'cvg437',items:[{z:'		   if(expected_data === exact_data)',f:'alu_tb.v',l:'172',c:'G',p:'100.00'}
-,{cr:'c',t:'I',z:'		   if(expected_data === exact_data)',f:'alu_tb.v',l:'172',h:'54',c:'g'}
-,{cr:'c',t:'E',z:'		   else',f:'alu_tb.v',l:'174',h:'2',c:'g'}
+{anchor:'cvg437',items:[{z:'		   if(expected_data === exact_data)',f:'alu_tb.v',l:'172',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'		   if(expected_data === exact_data)',f:'alu_tb.v',l:'172',h:'56',c:'g'}
+,{cr:'m',t:'E',z:'		   else',f:'alu_tb.v',l:'174',h:'0',c:'r'}
 ]}],
 b438:[{dummy:0},
-{anchor:'cvg439',items:[{z:'				if(status[0])',f:'alu_tb.v',l:'190',c:'G',p:'100.00'}
-,{cr:'c',t:'I',z:'				if(status[0])',f:'alu_tb.v',l:'190',h:'54',c:'g'}
-,{cr:'c',t:'E',z:'  		    	else',f:'alu_tb.v',l:'192',h:'2',c:'g'}
+{anchor:'cvg439',items:[{z:'				if(status[0])',f:'alu_tb.v',l:'190',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'				if(status[0])',f:'alu_tb.v',l:'190',h:'56',c:'g'}
+,{cr:'m',t:'E',z:'  		    	else',f:'alu_tb.v',l:'192',h:'0',c:'r'}
 ]}],
 b3:[{dummy:0},
 {anchor:'cvg441',items:[{z:'  		if(RST)',f:'alu.v',l:'36',c:'G',p:'100.00'}
@@ -17,7 +17,7 @@ b3:[{dummy:0},
 {anchor:'cvg442',items:[{z:'  		if(RST)		// If RST is 1 set output to zero',f:'alu.v',l:'60',c:'G',p:'100.00'}
 ,{cr:'c',t:'I',z:'  		if(RST)		// If RST is 1 set output to zero',f:'alu.v',l:'60',h:'7',c:'g'}
 ,{cr:'c',t:'T',z:'  		else if((mode_stage1 == 1) && ((cmd_stage1 == 4\'b1001) || (cmd_stage1...',f:'alu.v',l:'70',h:'11',c:'g'}
-,{cr:'c',t:'E',z:'  		else		// If RST is 0',f:'alu.v',l:'80',h:'126',c:'g'}
+,{cr:'c',t:'E',z:'  		else		// If RST is 0',f:'alu.v',l:'80',h:'125',c:'g'}
 ]},
 {anchor:'cvg443',items:[{z:'  		if(RST)',f:'alu.v',l:'94',c:'G',p:'100.00'}
 ,{cr:'c',t:'I',z:'  		if(RST)',f:'alu.v',l:'94',h:'8',c:'g'}
@@ -52,11 +52,11 @@ b3:[{dummy:0},
 ,{cr:'c',t:'T',z:'						4\'b0000:	// ADD',f:'alu.v',l:'181',h:'4',c:'g'}
 ,{cr:'c',t:'T',z:'                		4\'b0001:	// Subtract',f:'alu.v',l:'188',h:'4',c:'g'}
 ,{cr:'c',t:'T',z:'                		4\'b0010:	// ADD_CIN',f:'alu.v',l:'195',h:'4',c:'g'}
-,{cr:'c',t:'T',z:'                		4\'b0011:		// SUB_CIN',f:'alu.v',l:'202',h:'6',c:'g'}
+,{cr:'c',t:'T',z:'                		4\'b0011:		// SUB_CIN',f:'alu.v',l:'202',h:'8',c:'g'}
 ,{cr:'c',t:'T',z:'                		4\'b1000:		// CMP',f:'alu.v',l:'209',h:'5',c:'g'}
 ,{cr:'c',t:'T',z:'                		4\'b1001:		// Increment and multiply',f:'alu.v',l:'221',h:'5',c:'g'}
 ,{cr:'c',t:'T',z:'                		4\'b1010:		// SLL_A * B',f:'alu.v',l:'227',h:'2',c:'g'}
-,{cr:'c',t:'T',z:'                		4\'b1011:    // Signed Addition',f:'alu.v',l:'233',h:'12',c:'g'}
+,{cr:'c',t:'T',z:'                		4\'b1011:    // Signed Addition',f:'alu.v',l:'233',h:'10',c:'g'}
 ,{cr:'c',t:'T',z:'                		4\'b1100:    // Signed Subtraction',f:'alu.v',l:'251',h:'4',c:'g'}
 ,{cr:'c',t:'T',z:'                		default:',f:'alu.v',l:'268',h:'2',c:'g'}
 ]},
@@ -67,11 +67,11 @@ b3:[{dummy:0},
 ]},
 {anchor:'cvg451',items:[{z:'                  			zero_stage2 = (res_stage2 == 0)?\'d1:\'d0;	// Update z...',f:'alu.v',l:'242',c:'G',p:'100.00'}
 ,{cr:'c',t:'I',z:'                  			zero_stage2 = (res_stage2 == 0)?\'d1:\'d0;	// Update z...',f:'alu.v',l:'242',h:'2',c:'g'}
-,{cr:'c',t:'E',z:'                  			zero_stage2 = (res_stage2 == 0)?\'d1:\'d0;	// Update z...',f:'alu.v',l:'242',h:'10',c:'g'}
+,{cr:'c',t:'E',z:'                  			zero_stage2 = (res_stage2 == 0)?\'d1:\'d0;	// Update z...',f:'alu.v',l:'242',h:'8',c:'g'}
 ]},
 {anchor:'cvg452',items:[{z:'                  			if($signed(opa_stage1) > $signed(opb_stage1))	// Upd...',f:'alu.v',l:'244',c:'G',p:'100.00'}
 ,{cr:'c',t:'I',z:'                  			if($signed(opa_stage1) > $signed(opb_stage1))	// Upd...',f:'alu.v',l:'244',h:'6',c:'g'}
-,{cr:'c',t:'T',z:'                  			else if($signed(opa_stage1) < $signed(opb_stage1))',f:'alu.v',l:'246',h:'4',c:'g'}
+,{cr:'c',t:'T',z:'                  			else if($signed(opa_stage1) < $signed(opb_stage1))',f:'alu.v',l:'246',h:'2',c:'g'}
 ,{cr:'c',t:'E',z:'							else',f:'alu.v',l:'248',h:'2',c:'g'}
 ]},
 {anchor:'cvg453',items:[{z:'                  			zero_stage2 = (res_stage2 == 0)?\'d1:\'d0;	// Update z...',f:'alu.v',l:'259',c:'G',p:'100.00'}
@@ -125,7 +125,7 @@ b440:[{dummy:0},
 {anchor:'cvg442',items:[{z:'  		if(RST)		// If RST is 1 set output to zero',f:'alu.v',l:'60',c:'G',p:'100.00'}
 ,{cr:'c',t:'I',z:'  		if(RST)		// If RST is 1 set output to zero',f:'alu.v',l:'60',h:'7',c:'g'}
 ,{cr:'c',t:'T',z:'  		else if((mode_stage1 == 1) && ((cmd_stage1 == 4\'b1001) || (cmd_stage1...',f:'alu.v',l:'70',h:'11',c:'g'}
-,{cr:'c',t:'E',z:'  		else		// If RST is 0',f:'alu.v',l:'80',h:'126',c:'g'}
+,{cr:'c',t:'E',z:'  		else		// If RST is 0',f:'alu.v',l:'80',h:'125',c:'g'}
 ]},
 {anchor:'cvg443',items:[{z:'  		if(RST)',f:'alu.v',l:'94',c:'G',p:'100.00'}
 ,{cr:'c',t:'I',z:'  		if(RST)',f:'alu.v',l:'94',h:'8',c:'g'}
@@ -160,11 +160,11 @@ b440:[{dummy:0},
 ,{cr:'c',t:'T',z:'						4\'b0000:	// ADD',f:'alu.v',l:'181',h:'4',c:'g'}
 ,{cr:'c',t:'T',z:'                		4\'b0001:	// Subtract',f:'alu.v',l:'188',h:'4',c:'g'}
 ,{cr:'c',t:'T',z:'                		4\'b0010:	// ADD_CIN',f:'alu.v',l:'195',h:'4',c:'g'}
-,{cr:'c',t:'T',z:'                		4\'b0011:		// SUB_CIN',f:'alu.v',l:'202',h:'6',c:'g'}
+,{cr:'c',t:'T',z:'                		4\'b0011:		// SUB_CIN',f:'alu.v',l:'202',h:'8',c:'g'}
 ,{cr:'c',t:'T',z:'                		4\'b1000:		// CMP',f:'alu.v',l:'209',h:'5',c:'g'}
 ,{cr:'c',t:'T',z:'                		4\'b1001:		// Increment and multiply',f:'alu.v',l:'221',h:'5',c:'g'}
 ,{cr:'c',t:'T',z:'                		4\'b1010:		// SLL_A * B',f:'alu.v',l:'227',h:'2',c:'g'}
-,{cr:'c',t:'T',z:'                		4\'b1011:    // Signed Addition',f:'alu.v',l:'233',h:'12',c:'g'}
+,{cr:'c',t:'T',z:'                		4\'b1011:    // Signed Addition',f:'alu.v',l:'233',h:'10',c:'g'}
 ,{cr:'c',t:'T',z:'                		4\'b1100:    // Signed Subtraction',f:'alu.v',l:'251',h:'4',c:'g'}
 ,{cr:'c',t:'T',z:'                		default:',f:'alu.v',l:'268',h:'2',c:'g'}
 ]},
@@ -175,11 +175,11 @@ b440:[{dummy:0},
 ]},
 {anchor:'cvg451',items:[{z:'                  			zero_stage2 = (res_stage2 == 0)?\'d1:\'d0;	// Update z...',f:'alu.v',l:'242',c:'G',p:'100.00'}
 ,{cr:'c',t:'I',z:'                  			zero_stage2 = (res_stage2 == 0)?\'d1:\'d0;	// Update z...',f:'alu.v',l:'242',h:'2',c:'g'}
-,{cr:'c',t:'E',z:'                  			zero_stage2 = (res_stage2 == 0)?\'d1:\'d0;	// Update z...',f:'alu.v',l:'242',h:'10',c:'g'}
+,{cr:'c',t:'E',z:'                  			zero_stage2 = (res_stage2 == 0)?\'d1:\'d0;	// Update z...',f:'alu.v',l:'242',h:'8',c:'g'}
 ]},
 {anchor:'cvg452',items:[{z:'                  			if($signed(opa_stage1) > $signed(opb_stage1))	// Upd...',f:'alu.v',l:'244',c:'G',p:'100.00'}
 ,{cr:'c',t:'I',z:'                  			if($signed(opa_stage1) > $signed(opb_stage1))	// Upd...',f:'alu.v',l:'244',h:'6',c:'g'}
-,{cr:'c',t:'T',z:'                  			else if($signed(opa_stage1) < $signed(opb_stage1))',f:'alu.v',l:'246',h:'4',c:'g'}
+,{cr:'c',t:'T',z:'                  			else if($signed(opa_stage1) < $signed(opb_stage1))',f:'alu.v',l:'246',h:'2',c:'g'}
 ,{cr:'c',t:'E',z:'							else',f:'alu.v',l:'248',h:'2',c:'g'}
 ]},
 {anchor:'cvg453',items:[{z:'                  			zero_stage2 = (res_stage2 == 0)?\'d1:\'d0;	// Update z...',f:'alu.v',l:'259',c:'G',p:'100.00'}
@@ -226,14 +226,14 @@ b440:[{dummy:0},
 ,{cr:'c',t:'E',z:'  		else',f:'alu.v',l:'407',h:'17',c:'g'}
 ]}],
 b1048:[{dummy:0},
-{anchor:'cvg1049',items:[{z:'		   if(expected_data === exact_data)',f:'alu_tb.v',l:'172',c:'G',p:'100.00'}
-,{cr:'c',t:'I',z:'		   if(expected_data === exact_data)',f:'alu_tb.v',l:'172',h:'54',c:'g'}
-,{cr:'c',t:'E',z:'		   else',f:'alu_tb.v',l:'174',h:'2',c:'g'}
+{anchor:'cvg1049',items:[{z:'		   if(expected_data === exact_data)',f:'alu_tb.v',l:'172',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'		   if(expected_data === exact_data)',f:'alu_tb.v',l:'172',h:'56',c:'g'}
+,{cr:'m',t:'E',z:'		   else',f:'alu_tb.v',l:'174',h:'0',c:'r'}
 ]}],
 b1050:[{dummy:0},
-{anchor:'cvg1051',items:[{z:'				if(status[0])',f:'alu_tb.v',l:'190',c:'G',p:'100.00'}
-,{cr:'c',t:'I',z:'				if(status[0])',f:'alu_tb.v',l:'190',h:'54',c:'g'}
-,{cr:'c',t:'E',z:'  		    	else',f:'alu_tb.v',l:'192',h:'2',c:'g'}
+{anchor:'cvg1051',items:[{z:'				if(status[0])',f:'alu_tb.v',l:'190',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'				if(status[0])',f:'alu_tb.v',l:'190',h:'56',c:'g'}
+,{cr:'m',t:'E',z:'  		    	else',f:'alu_tb.v',l:'192',h:'0',c:'r'}
 ]}],
 dummyEnd:0
 };

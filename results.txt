@@ -51,6 +51,6 @@ Feature ID  49 : PASS
 Feature ID  50 : PASS
 Feature ID  51 : PASS
 Feature ID  52 : PASS
-Feature ID  52 : PASS
-Feature ID  54 : FAIL
-Feature ID  54 : FAIL
+Feature ID  53 : PASS
+Feature ID  54 : PASS
+Feature ID  55 : PASS
