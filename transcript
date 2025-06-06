@@ -1,0 +1,475 @@
+# vsim -coverage alu_tb -c -do "coverage save -onexit -directive -codeAll alu_tb.ucdb; run -all; exit" 
+# Start time: 00:00:08 on Jun 07,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.alu_tb(fast)
+# Loading work.alu_new(fast)
+# coverage save -onexit -directive -codeAll alu_tb.ucdb
+#  run -all
+# stimulus_mem data = 1000001100000011000001010000000000000000100000000 
+# 
+# packet data = 1000001100000011000001010000000000000000100000000 
+# 
+# At time (60), Feature_ID = 0, Reserved_bit = 00, OPA = 00000011, OPB = 00000101, CMD = 0000, CIN = 0, CE = 1,INP_VALID = 11, MODE = 0, expected_result = 0000000000000001, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (425), RES = 0000000000000001, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000000000100000000 ,response data = 000000000000000100000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 101000011100000011000001010000000001111111000000000 
+# 
+# packet data = 101000011100000011000001010000000001111111000000000 
+# 
+# At time (540), Feature_ID = 1, Reserved_bit = 00, OPA = 00000011, OPB = 00000101, CMD = 0001, CIN = 0, CE = 1,INP_VALID = 11, MODE = 0, expected_result = 0000000011111110, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (905), RES = 0000000011111110, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000001111111000000000 ,response data = 000000001111111000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1001000101100000011000001010000000000000011100000000 
+# 
+# packet data = 1001000101100000011000001010000000000000011100000000 
+# 
+# At time (1020), Feature_ID = 2, Reserved_bit = 00, OPA = 00000011, OPB = 00000101, CMD = 0010, CIN = 0, CE = 1,INP_VALID = 11, MODE = 0, expected_result = 0000000000000111, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (1385), RES = 0000000000000111, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000000011100000000 ,response data = 000000000000011100000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1101000111100000011000001010000000001111100000000000 
+# 
+# packet data = 1101000111100000011000001010000000001111100000000000 
+# 
+# At time (1500), Feature_ID = 3, Reserved_bit = 00, OPA = 00000011, OPB = 00000101, CMD = 0011, CIN = 0, CE = 1,INP_VALID = 11, MODE = 0, expected_result = 0000000011111000, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (1865), RES = 0000000011111000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000001111100000000000 ,response data = 000000001111100000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10001001001100000011000001010000000000000011000000000 
+# 
+# packet data = 10001001001100000011000001010000000000000011000000000 
+# 
+# At time (1980), Feature_ID = 4, Reserved_bit = 00, OPA = 00000011, OPB = 00000101, CMD = 0100, CIN = 0, CE = 1,INP_VALID = 11, MODE = 0, expected_result = 0000000000000110, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (2345), RES = 0000000000000110, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000000011000000000 ,response data = 000000000000011000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10101001011100000011000001010000000001111100100000000 
+# 
+# packet data = 10101001011100000011000001010000000001111100100000000 
+# 
+# At time (2460), Feature_ID = 5, Reserved_bit = 00, OPA = 00000011, OPB = 00000101, CMD = 0101, CIN = 0, CE = 1,INP_VALID = 11, MODE = 0, expected_result = 0000000011111001, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (2825), RES = 0000000011111001, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000001111100100000000 ,response data = 000000001111100100000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 11001011001111011100000001000000000001100110100000000 
+# 
+# packet data = 11001011001111011100000001000000000001100110100000000 
+# 
+# At time (2940), Feature_ID = 6, Reserved_bit = 00, OPA = 11011100, OPB = 00000100, CMD = 1100, CIN = 0, CE = 1,INP_VALID = 11, MODE = 0, expected_result = 0000000011001101, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (3305), RES = 0000000011001101, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000001100110100000000 ,response data = 000000001100110100000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 11111011001111011100000001000000000000000000000000000 
+# 
+# packet data = 11111011001111011100000001000000000000000000000000000 
+# 
+# At time (3420), Feature_ID = 7, Reserved_bit = 00, OPA = 11011100, OPB = 00000100, CMD = 1100, CIN = 0, CE = 1,INP_VALID = 11, MODE = 0, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (3785), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000000000000000000 ,response data = 000000000000000000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 100001011011111011100000001000000000001100110100000000 
+# 
+# packet data = 100001011011111011100000001000000000001100110100000000 
+# 
+# At time (3900), Feature_ID = 8, Reserved_bit = 00, OPA = 11011100, OPB = 00000100, CMD = 1101, CIN = 0, CE = 1,INP_VALID = 11, MODE = 0, expected_result = 0000000011001101, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (4265), RES = 0000000011001101, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000001100110100000000 ,response data = 000000001100110100000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 100101001111111011100000001000000000000000000000100000 
+# 
+# packet data = 100101001111111011100000001000000000000000000000100000 
+# 
+# At time (4380), Feature_ID = 9, Reserved_bit = 00, OPA = 11011100, OPB = 00000100, CMD = 0111, CIN = 0, CE = 1,INP_VALID = 11, MODE = 0, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 1, neg = 0, zero = 0
+# Monitor response: At time (4745), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 1, NEG = 0, ZERO = 0
+# expected result = 000000000000000000000100 ,response data = 000000000000000000000100
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 101001001111000000000010001010000000001011101000000000 
+# 
+# packet data = 101001001111000000000010001010000000001011101000000000 
+# 
+# At time (4860), Feature_ID = 10, Reserved_bit = 00, OPA = 00000000, OPB = 01000101, CMD = 0111, CIN = 0, CE = 1,INP_VALID = 10, MODE = 0, expected_result = 0000000010111010, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (5225), RES = 0000000010111010, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000001011101000000000 ,response data = 000000001011101000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 101101010101000000000110111000000000000110111000000000 
+# 
+# packet data = 101101010101000000000110111000000000000110111000000000 
+# 
+# At time (5340), Feature_ID = 11, Reserved_bit = 00, OPA = 00000000, OPB = 11011100, CMD = 1010, CIN = 0, CE = 1,INP_VALID = 10, MODE = 0, expected_result = 0000000001101110, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (5705), RES = 0000000001101110, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000110111000000000 ,response data = 000000000110111000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 110001000011011011100000001000000000000000000000100000 
+# 
+# packet data = 110001000011011011100000001000000000000000000000100000 
+# 
+# At time (5820), Feature_ID = 12, Reserved_bit = 00, OPA = 11011100, OPB = 00000100, CMD = 0001, CIN = 0, CE = 1,INP_VALID = 10, MODE = 0, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 1, neg = 0, zero = 0
+# Monitor response: At time (6185), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 1, NEG = 0, ZERO = 0
+# expected result = 000000000000000000000100 ,response data = 000000000000000000000100
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 110101010111000000000110111000000000001011100000000000 
+# 
+# packet data = 110101010111000000000110111000000000001011100000000000 
+# 
+# At time (6300), Feature_ID = 13, Reserved_bit = 00, OPA = 00000000, OPB = 11011100, CMD = 1011, CIN = 0, CE = 1,INP_VALID = 10, MODE = 0, expected_result = 0000000010111000, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (6665), RES = 0000000010111000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000001011100000000000 ,response data = 000000001011100000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 111001001100101000101000000000000000001011101000000000 
+# 
+# packet data = 111001001100101000101000000000000000001011101000000000 
+# 
+# At time (6780), Feature_ID = 14, Reserved_bit = 00, OPA = 01000101, OPB = 00000000, CMD = 0110, CIN = 0, CE = 1,INP_VALID = 01, MODE = 0, expected_result = 0000000010111010, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (7145), RES = 0000000010111010, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000001011101000000000 ,response data = 000000001011101000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 111101010000111011100000000000000000000110111000000000 
+# 
+# packet data = 111101010000111011100000000000000000000110111000000000 
+# 
+# At time (7260), Feature_ID = 15, Reserved_bit = 00, OPA = 11011100, OPB = 00000000, CMD = 1000, CIN = 0, CE = 1,INP_VALID = 01, MODE = 0, expected_result = 0000000001101110, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (7625), RES = 0000000001101110, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000110111000000000 ,response data = 000000000110111000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1000001000010111011100000001000000000000000000000100000 
+# 
+# packet data = 1000001000010111011100000001000000000000000000000100000 
+# 
+# At time (7740), Feature_ID = 16, Reserved_bit = 00, OPA = 11011100, OPB = 00000100, CMD = 0001, CIN = 0, CE = 1,INP_VALID = 01, MODE = 0, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 1, neg = 0, zero = 0
+# Monitor response: At time (8105), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 1, NEG = 0, ZERO = 0
+# expected result = 000000000000000000000100 ,response data = 000000000000000000000100
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1000101010010111011100000000000000000001011100000000000 
+# 
+# packet data = 1000101010010111011100000000000000000001011100000000000 
+# 
+# At time (8220), Feature_ID = 17, Reserved_bit = 00, OPA = 11011100, OPB = 00000000, CMD = 1001, CIN = 0, CE = 1,INP_VALID = 01, MODE = 0, expected_result = 0000000010111000, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (8585), RES = 0000000010111000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000001011100000000000 ,response data = 000000001011100000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1001010011001111011100000001000000000000000000000000000 
+# 
+# packet data = 1001010011001111011100000001000000000000000000000000000 
+# 
+# At time (8700), Feature_ID = 18, Reserved_bit = 00, OPA = 11011100, OPB = 00000100, CMD = 1100, CIN = 0, CE = 0,INP_VALID = 11, MODE = 0, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (9065), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000000000000000000 ,response data = 000000000000000000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1001101011000011011100000001000000000000000000000100000 
+# 
+# packet data = 1001101011000011011100000001000000000000000000000100000 
+# 
+# At time (9180), Feature_ID = 19, Reserved_bit = 00, OPA = 11011100, OPB = 00000100, CMD = 1100, CIN = 0, CE = 1,INP_VALID = 00, MODE = 0, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 1, neg = 0, zero = 0
+# Monitor response: At time (9545), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 1, NEG = 0, ZERO = 0
+# expected result = 000000000000000000000100 ,response data = 000000000000000000000100
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1010001100001101100100011001000000000001100100000000000 
+# 
+# packet data = 1010001100001101100100011001000000000001100100000000000 
+# 
+# At time (9660), Feature_ID = 20, Reserved_bit = 00, OPA = 01100100, OPB = 01100100, CMD = 0000, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000011001000, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (10025), RES = 0000000011001000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000001100100000000000 ,response data = 000000001100100000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1010101100001111111110000000100000000010000000011000000 
+# 
+# packet data = 1010101100001111111110000000100000000010000000011000000 
+# 
+# At time (10140), Feature_ID = 21, Reserved_bit = 00, OPA = 11111110, OPB = 00000010, CMD = 0000, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000100000000, cout = 1, Comparison_GLE = 000, ov = 1, err = 0, neg = 0, zero = 0
+# Monitor response: At time (10505), RES = 0000000100000000, COUT = 1, GLE = 000, OFLOW = 1, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000010000000010001000 ,response data = 000000010000000010001000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1011001100011111111010000110010000000001110000100000000 
+# 
+# packet data = 1011001100011111111010000110010000000001110000100000000 
+# 
+# At time (10620), Feature_ID = 22, Reserved_bit = 00, OPA = 11111010, OPB = 00011001, CMD = 0001, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000011100001, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (10985), RES = 0000000011100001, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000001110000100000000 ,response data = 000000001110000100000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1011101100011100000100001010100000000011101101011000000 
+# 
+# packet data = 1011101100011100000100001010100000000011101101011000000 
+# 
+# At time (11100), Feature_ID = 23, Reserved_bit = 00, OPA = 00000100, OPB = 00101010, CMD = 0001, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000111011010, cout = 1, Comparison_GLE = 000, ov = 1, err = 0, neg = 0, zero = 0
+# Monitor response: At time (11465), RES = 0000000111011010, COUT = 1, GLE = 000, OFLOW = 1, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000011101101010001000 ,response data = 000000011101101010001000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1100001100101100011001000110011000000000011001100000000 
+# 
+# packet data = 1100001100101100011001000110011000000000011001100000000 
+# 
+# At time (11580), Feature_ID = 24, Reserved_bit = 00, OPA = 00011001, OPB = 00011001, CMD = 0010, CIN = 1, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000000110011, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (11945), RES = 0000000000110011, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000011001100000000 ,response data = 000000000011001100000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1100101100101111111010000001011000000010000000011000000 
+# 
+# packet data = 1100101100101111111010000001011000000010000000011000000 
+# 
+# At time (12060), Feature_ID = 25, Reserved_bit = 00, OPA = 11111010, OPB = 00000101, CMD = 0010, CIN = 1, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000100000000, cout = 1, Comparison_GLE = 000, ov = 1, err = 0, neg = 0, zero = 0
+# Monitor response: At time (12425), RES = 0000000100000000, COUT = 1, GLE = 000, OFLOW = 1, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000010000000010001000 ,response data = 000000010000000010001000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1101001100111100101010000001001000000011111111110000000 
+# 
+# packet data = 1101001100111100101010000001001000000011111111110000000 
+# 
+# At time (12540), Feature_ID = 26, Reserved_bit = 00, OPA = 00101010, OPB = 00000100, CMD = 0011, CIN = 1, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000111111111, cout = 1, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (12905), RES = 0000000111111111, COUT = 1, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000011111111110000000 ,response data = 000000011111111110000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1101101110001111111111111111110000000000000000000000100 
+# 
+# packet data = 1101101110001111111111111111110000000000000000000000100 
+# 
+# At time (13020), Feature_ID = 27, Reserved_bit = 00, OPA = 11111111, OPB = 11111111, CMD = 1000, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 001, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (13385), RES = 0000000000000000, COUT = 0, GLE = 001, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000000000000010000 ,response data = 000000000000000000010000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1110001110001111001000001010000000000000000000000010000 
+# 
+# packet data = 1110001110001111001000001010000000000000000000000010000 
+# 
+# At time (13500), Feature_ID = 28, Reserved_bit = 00, OPA = 11001000, OPB = 00101000, CMD = 1000, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 100, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (13865), RES = 0000000000000000, COUT = 0, GLE = 100, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000000000001000000 ,response data = 000000000000000001000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1110101110001101011010101000000000000000000000000001000 
+# 
+# packet data = 1110101110001101011010101000000000000000000000000001000 
+# 
+# At time (13980), Feature_ID = 29, Reserved_bit = 00, OPA = 01011010, OPB = 10100000, CMD = 1000, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 010, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (14345), RES = 0000000000000000, COUT = 0, GLE = 010, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000000000000100000 ,response data = 000000000000000000100000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1111001110011100000011000000110000000000001000000000000 
+# 
+# packet data = 1111001110011100000011000000110000000000001000000000000 
+# 
+# At time (14460), Feature_ID = 30, Reserved_bit = 00, OPA = 00000011, OPB = 00000011, CMD = 1001, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000000010000, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (14825), RES = 0000000000010000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000001000000000000 ,response data = 000000000001000000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1111101110101100001000000000100000000000010000000000000 
+# 
+# packet data = 1111101110101100001000000000100000000000010000000000000 
+# 
+# At time (14940), Feature_ID = 31, Reserved_bit = 00, OPA = 00001000, OPB = 00000010, CMD = 1010, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000000100000, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (15305), RES = 0000000000100000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000010000000000000 ,response data = 000000000010000000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10000001101111100010100000001000000000000000000000100000 
+# 
+# packet data = 10000001101111100010100000001000000000000000000000100000 
+# 
+# At time (15420), Feature_ID = 32, Reserved_bit = 00, OPA = 00010100, OPB = 00000100, CMD = 0111, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 1, neg = 0, zero = 0
+# Monitor response: At time (15785), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 1, NEG = 0, ZERO = 0
+# expected result = 000000000000000000000100 ,response data = 000000000000000000000100
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10000101110111111111011110011100000000011100100110010010 
+# 
+# packet data = 10000101110111111111011110011100000000011100100110010010 
+# 
+# At time (15900), Feature_ID = 33, Reserved_bit = 00, OPA = 11111011, OPB = 11001110, CMD = 1011, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000111001001, cout = 1, Comparison_GLE = 100, ov = 0, err = 0, neg = 1, zero = 0
+# Monitor response: At time (16265), RES = 0000000111001001, COUT = 1, GLE = 100, OFLOW = 0, ERR = 0, NEG = 1, ZERO = 0
+# expected result = 000000011100100111000010 ,response data = 000000011100100111000010
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10001001110111100000010011111110000000001000000101001000 
+# 
+# packet data = 10001001110111100000010011111110000000001000000101001000 
+# 
+# At time (16380), Feature_ID = 34, Reserved_bit = 00, OPA = 00000010, OPB = 01111111, CMD = 1011, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000010000001, cout = 0, Comparison_GLE = 010, ov = 1, err = 0, neg = 0, zero = 0
+# Monitor response: At time (16745), RES = 0000000010000001, COUT = 0, GLE = 010, OFLOW = 1, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000001000000100101000 ,response data = 000000001000000100101000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10001101110111101111111100000010000000000000000000010001 
+# 
+# packet data = 10001101110111101111111100000010000000000000000000010001 
+# 
+# At time (16860), Feature_ID = 35, Reserved_bit = 00, OPA = 01111111, OPB = 10000001, CMD = 1011, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 100, ov = 0, err = 0, neg = 0, zero = 1
+# Monitor response: At time (17225), RES = 0000000000000000, COUT = 0, GLE = 100, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 1
+# expected result = 000000000000000001000001 ,response data = 000000000000000001000001
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10010001110111101111111111111110000000000111111000010000 
+# 
+# packet data = 10010001110111101111111111111110000000000111111000010000 
+# 
+# At time (17340), Feature_ID = 36, Reserved_bit = 00, OPA = 01111111, OPB = 11111111, CMD = 1011, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000001111110, cout = 0, Comparison_GLE = 100, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (17705), RES = 0000000001111110, COUT = 0, GLE = 100, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000111111001000000 ,response data = 000000000111111001000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10010101110111111110110111101100000000011110110010000110 
+# 
+# packet data = 10010101110111111110110111101100000000011110110010000110 
+# 
+# At time (17820), Feature_ID = 37, Reserved_bit = 00, OPA = 11110110, OPB = 11110110, CMD = 1011, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000111101100, cout = 1, Comparison_GLE = 001, ov = 0, err = 0, neg = 1, zero = 0
+# Monitor response: At time (18185), RES = 0000000111101100, COUT = 1, GLE = 001, OFLOW = 0, ERR = 0, NEG = 1, ZERO = 0
+# expected result = 000000011110110010010010 ,response data = 000000011110110010010010
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10011001111001101111111111111110000000001000000000010000 
+# 
+# packet data = 10011001111001101111111111111110000000001000000000010000 
+# 
+# At time (18300), Feature_ID = 38, Reserved_bit = 00, OPA = 01111111, OPB = 11111111, CMD = 1100, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000010000000, cout = 0, Comparison_GLE = 100, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (18665), RES = 0000000010000000, COUT = 0, GLE = 100, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000001000000001000000 ,response data = 000000001000000001000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10011101111001100010100011001000000000011011000011001010 
+# 
+# packet data = 10011101111001100010100011001000000000011011000011001010 
+# 
+# At time (18780), Feature_ID = 39, Reserved_bit = 00, OPA = 00010100, OPB = 01100100, CMD = 1100, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000110110000, cout = 1, Comparison_GLE = 010, ov = 1, err = 0, neg = 1, zero = 0
+# Monitor response: At time (19145), RES = 0000000110110000, COUT = 1, GLE = 010, OFLOW = 1, ERR = 0, NEG = 1, ZERO = 0
+# expected result = 000000011011000010101010 ,response data = 000000011011000010101010
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10100001111001101100100011001000000000000000000000000101 
+# 
+# packet data = 10100001111001101100100011001000000000000000000000000101 
+# 
+# At time (19260), Feature_ID = 40, Reserved_bit = 00, OPA = 01100100, OPB = 01100100, CMD = 1100, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 001, ov = 0, err = 0, neg = 0, zero = 1
+# Monitor response: At time (19625), RES = 0000000000000000, COUT = 0, GLE = 001, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 1
+# expected result = 000000000000000000010001 ,response data = 000000000000000000010001
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10100101111000001100100011001000000000000000000000100000 
+# 
+# packet data = 10100101111000001100100011001000000000000000000000100000 
+# 
+# At time (19740), Feature_ID = 41, Reserved_bit = 00, OPA = 01100100, OPB = 01100100, CMD = 1100, CIN = 0, CE = 1,INP_VALID = 00, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 1, neg = 0, zero = 0
+# Monitor response: At time (20105), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 1, NEG = 0, ZERO = 0
+# expected result = 000000000000000000000100 ,response data = 000000000000000000000100
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10101001101000101100100000000010000000000110010100000000 
+# 
+# packet data = 10101001101000101100100000000010000000000110010100000000 
+# 
+# At time (20220), Feature_ID = 42, Reserved_bit = 00, OPA = 01100100, OPB = 00000001, CMD = 0100, CIN = 0, CE = 1,INP_VALID = 01, MODE = 1, expected_result = 0000000001100101, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (20585), RES = 0000000001100101, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000110010100000000 ,response data = 000000000110010100000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10101101101010101100100000000010000000000110001100000000 
+# 
+# packet data = 10101101101010101100100000000010000000000110001100000000 
+# 
+# At time (20700), Feature_ID = 43, Reserved_bit = 00, OPA = 01100100, OPB = 00000001, CMD = 0101, CIN = 0, CE = 1,INP_VALID = 01, MODE = 1, expected_result = 0000000001100011, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (21065), RES = 0000000001100011, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000110001100000000 ,response data = 000000000110001100000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10110001100000101100100000000010000000000000000000100000 
+# 
+# packet data = 10110001100000101100100000000010000000000000000000100000 
+# 
+# At time (21180), Feature_ID = 44, Reserved_bit = 00, OPA = 01100100, OPB = 00000001, CMD = 0000, CIN = 0, CE = 1,INP_VALID = 01, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 1, neg = 0, zero = 0
+# Monitor response: At time (21545), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 1, NEG = 0, ZERO = 0
+# expected result = 000000000000000000000100 ,response data = 000000000000000000000100
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10110101101101011001000011001000000000000110010100000000 
+# 
+# packet data = 10110101101101011001000011001000000000000110010100000000 
+# 
+# At time (21660), Feature_ID = 45, Reserved_bit = 00, OPA = 11001000, OPB = 01100100, CMD = 0110, CIN = 0, CE = 1,INP_VALID = 10, MODE = 1, expected_result = 0000000001100101, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (22025), RES = 0000000001100101, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000110010100000000 ,response data = 000000000110010100000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10111001101111011001000011001000000000000110001100000000 
+# 
+# packet data = 10111001101111011001000011001000000000000110001100000000 
+# 
+# At time (22140), Feature_ID = 46, Reserved_bit = 00, OPA = 11001000, OPB = 01100100, CMD = 0111, CIN = 0, CE = 1,INP_VALID = 10, MODE = 1, expected_result = 0000000001100011, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (22505), RES = 0000000001100011, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000110001100000000 ,response data = 000000000110001100000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 10111101100011011001000011001000000000000000000000100000 
+# 
+# packet data = 10111101100011011001000011001000000000000000000000100000 
+# 
+# At time (22620), Feature_ID = 47, Reserved_bit = 00, OPA = 11001000, OPB = 01100100, CMD = 0001, CIN = 0, CE = 1,INP_VALID = 10, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 1, neg = 0, zero = 0
+# Monitor response: At time (22985), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 1, NEG = 0, ZERO = 0
+# expected result = 000000000000000000000100 ,response data = 000000000000000000000100
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 11000001100111101100100110010001000000011111111111000000 
+# 
+# packet data = 11000001100111101100100110010001000000011111111111000000 
+# 
+# At time (23100), Feature_ID = 48, Reserved_bit = 00, OPA = 01100100, OPB = 11001000, CMD = 0011, CIN = 1, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000111111111, cout = 1, Comparison_GLE = 000, ov = 1, err = 0, neg = 0, zero = 0
+# Monitor response: At time (23465), RES = 0000000111111111, COUT = 1, GLE = 000, OFLOW = 1, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000011111111110001000 ,response data = 000000011111111110001000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 11000101100111111001000110010001000000011111111111000000 
+# 
+# packet data = 11000101100111111001000110010001000000011111111111000000 
+# 
+# At time (23580), Feature_ID = 49, Reserved_bit = 00, OPA = 11001000, OPB = 11001000, CMD = 0011, CIN = 1, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000111111111, cout = 1, Comparison_GLE = 000, ov = 1, err = 0, neg = 0, zero = 0
+# Monitor response: At time (23945), RES = 0000000111111111, COUT = 1, GLE = 000, OFLOW = 1, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000011111111110001000 ,response data = 000000011111111110001000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 11001001110111111111011000010100000000000000010100001000 
+# 
+# packet data = 11001001110111111111011000010100000000000000010100001000 
+# 
+# At time (24060), Feature_ID = 50, Reserved_bit = 00, OPA = 11111011, OPB = 00001010, CMD = 1011, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000000000101, cout = 0, Comparison_GLE = 010, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (24425), RES = 0000000000000101, COUT = 0, GLE = 010, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000000010100100000 ,response data = 000000000000010100100000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 11001101110011111111110111111100111111100000000100000000 
+# 
+# packet data = 11001101110011111111110111111100111111100000000100000000 
+# 
+# At time (24540), Feature_ID = 51, Reserved_bit = 00, OPA = 11111110, OPB = 11111110, CMD = 1001, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 1111111000000001, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (24905), RES = 1111111000000001, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 111111100000000100000000 ,response data = 111111100000000100000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 11010001110011100000110010010000000000011111111100000000 
+# 
+# packet data = 11010001110011100000110010010000000000011111111100000000 
+# 
+# At time (25020), Feature_ID = 52, Reserved_bit = 00, OPA = 00000110, OPB = 01001000, CMD = 1001, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000111111111, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (25385), RES = 0000000111111111, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000011111111100000000 ,response data = 000000011111111100000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 11010011010011100000010010101000000000000000000000000000 
+# 
+# packet data = 11010011010011100000010010101000000000000000000000000000 
+# 
+# At time (25500), Feature_ID = 52, Reserved_bit = 00, OPA = 00000010, OPB = 01010100, CMD = 1001, CIN = 0, CE = 1,INP_VALID = 11, MODE = 0, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 0, err = 0, neg = 0, zero = 0
+# Monitor response: At time (25865), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000000000000000000 ,response data = 000000000000000000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 1101100110011xx00000000000000001000000000000000001000000 
+# 
+# packet data = 1101100110011xx00000000000000001000000000000000001000000 
+# 
+# At time (25980), Feature_ID = 54, Reserved_bit = 00, OPA = 00000000, OPB = 00000000, CMD = 0011, CIN = 1, CE = 1,INP_VALID = xx, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 1, err = 0, neg = 0, zero = 0
+# Monitor response: At time (26345), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000000000000001000 ,response data = 000000000000000000000000
+# -----------------------------------------------------------------------------------------
+# stimulus_mem data = 11011001100111100000000000000000000000000000000001000000 
+# 
+# packet data = 11011001100111100000000000000000000000000000000001000000 
+# 
+# At time (26460), Feature_ID = 54, Reserved_bit = 00, OPA = 00000000, OPB = 00000000, CMD = 0011, CIN = 0, CE = 1,INP_VALID = 11, MODE = 1, expected_result = 0000000000000000, cout = 0, Comparison_GLE = 000, ov = 1, err = 0, neg = 0, zero = 0
+# Monitor response: At time (26825), RES = 0000000000000000, COUT = 0, GLE = 000, OFLOW = 0, ERR = 0, NEG = 0, ZERO = 0
+# expected result = 000000000000000000001000 ,response data = 000000000000000000000000
+# -----------------------------------------------------------------------------------------
+# ** Note: $finish    : alu_tb.v(216)
+#    Time: 27130 ns  Iteration: 0  Instance: /alu_tb
+# Saving coverage database on exit...
+# End time: 00:00:09 on Jun 07,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
