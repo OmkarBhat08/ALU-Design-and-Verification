@@ -1,4 +1,0 @@
-vlog -sv +acc +cover +fcover alu_tb.v
-vsim -coverage alu_tb -c -do "coverage save -onexit -directive -codeAll alu_tb.ucdb; run -all; exit"
-vcover report -html alu_tb.ucdb -htmldir covReport -details
-
